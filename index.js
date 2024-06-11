@@ -8,7 +8,7 @@ fetchIP();
 
 const server = net.createServer((socket) => {
   socket.on('data', (data) => {
-    if (data.toString().includes("Go-http") return;
+    if (data.toString().includes("Go-http")) return;
     console.log(data);
     console.log(data.toString());
   });
